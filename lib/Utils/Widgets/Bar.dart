@@ -27,11 +27,11 @@ class Bar extends StatelessWidget {
             ".",
             style: WebBarDot,
           ),
-          const SizedBox(width: 80,),
+          const SizedBox(width: 160,),
           MouseRegion(
             cursor: SystemMouseCursors.click,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 100),
+              padding: const EdgeInsets.symmetric(horizontal: 30),
               child: Text(
                 "Home",
                 style: GreyTextBar,

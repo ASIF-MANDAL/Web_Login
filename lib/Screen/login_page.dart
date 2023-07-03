@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Utils/Widgets/Bar.dart';
+import '../Utils/Widgets/Buttons.dart';
 import '../Utils/Widgets/CustomTextField.dart';
 import '../Utils/Widgets/FillBox.dart';
 import '../Utils/Widgets/TextPart.dart';
@@ -23,11 +24,33 @@ class LoginPage extends StatelessWidget {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Bar(),
             SizedBox(height: 75,),
             TextPart(),
             FillBoxes(),
+            // SizedBox(height: 30,),
+            Row(
+              children: const [
+                MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: Buttons(
+                    color: Color(0xFF555b69),
+                    text: 'Change method',
+                  ),
+                ),
+                SizedBox(width: 10),
+                MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: Buttons(
+                    color: Color(0xFF1c90f5),
+                    text: 'Create account',
+                  ),
+                ),
+              ],
+            ),
+
+
           ],
         ),
       ),
